@@ -1,0 +1,32 @@
+<h1><center>Multimedia dan Media Source dalam HTML</center></h1>
+
+<ul>
+    <li>
+        <h2>Video</h2>
+        <hr >
+        <link href="meet6.css" rel="stylesheet">
+        <video controls width="400" height="200" loop autoplay muted preload="auto">
+            <source src="vid-1.mp4" type="video/mp4">
+            <p>Browser tidak mendukung! gunakan <a href="./vid-1.mp4">link</a> berikut</p>
+            <track kind="captions" src="./vid-1.vtt" srclang="en" label="English">
+        </video>
+    </li>
+    <li>
+        <h2>Audio</h2>
+        <hr>
+        <audio controls>
+            <source src="./aud-1.mp3"type="audio/mp3">
+            <p>Browser tidak mendukung! gunakan <a href="./aud-1.mp3">link</a> berikut</p>
+        </audio>
+    </li>
+<li>
+    <h2>Gambar Responsive</h2>
+    <hr>
+    <picture>
+        <source media="(max-width: 600px)" srcset="./pic-1.jpg">
+        <source media="(max-width: 1200px)" srcset="./pic-2.jpg">
+        <img src="pic-2.jpg"alt="pic 1" style="width:auto;">
+    </picture>
+    <script src="meet6.js"></script>
+</li>
+</ul>
